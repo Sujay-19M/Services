@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Sales Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f0f0f; color: #f1f1f1; padding: 2rem; line-height: 1.6; }
+    header, section { margin-bottom: 4rem; }
+    h1, h2, h3 { color: #00ffff; }
+    .hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #0f0f0f, #1f1f1f); border-radius: 20px; animation: fadeIn 1s ease-in; }
+    .cta-btn { background: #00ffff; color: #000; padding: 1rem 2rem; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; margin: 1rem; transition: background 0.3s; }
+    .cta-btn:hover { background: #00d9d9; }
+    ul { list-style-type: square; margin-left: 1.5rem; }
+    .package-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .package-table th, .package-table td { border: 1px solid #333; padding: 1rem; text-align: center; }
+    .testimonial, .demo, .faq { background: #1a1a1a; padding: 1rem; border-radius: 10px; margin-bottom: 1rem; animation: fadeUp 1s ease; }
+    form input, form textarea { width: 100%; padding: 1rem; margin-bottom: 1rem; border: none; border-radius: 8px; background: #2c2c2c; color: white; }
+    form button { width: 100%; background: #00ffff; border: none; padding: 1rem; border-radius: 8px; font-weight: bold; cursor: pointer; }
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Get a Fast, Modern & SEO-Ready Website — Designed to Grow Your Brand</h1>
+    <button class="cta-btn">Book a Free Consultation</button>
+    <button class="cta-btn">Get Your Website Now</button>
+  </header>
+
+  <section>
+    <h2>Who This is For</h2>
+    <ul>
+      <li>Personal brands</li>
+      <li>Freelancers</li>
+      <li>Coaches</li>
+      <li>Startups</li>
+      <li>Service providers</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why Choose Me?</h2>
+    <ul>
+      <li>Clean code (Next.js, HTML, CSS)</li>
+      <li>SEO-rich design</li>
+      <li>Fast delivery</li>
+      <li>Transparent pricing</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Packages & Pricing</h2>
+    <table class="package-table">
+      <tr>
+        <th>Features</th><th>Starter</th><th>Pro</th><th>Booster</th>
+      </tr>
+      <tr><td>Custom Design</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+      <tr><td>SEO Optimization</td><td>Basic</td><td>Advanced</td><td>Expert</td></tr>
+      <tr><td>Delivery Time</td><td>7 days</td><td>5 days</td><td>3 days</td></tr>
+      <tr><td>Price</td><td>$199</td><td>$399</td><td>$699</td></tr>
+    </table>
+    <div style="margin-top: 1rem;">
+      <button class="cta-btn">Choose Starter</button>
+      <button class="cta-btn">Choose Pro</button>
+      <button class="cta-btn">Choose Booster</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Past Work / Demos</h2>
+    <div class="demo">
+      <img src="demo1.jpg" alt="Demo 1" style="width: 100%; border-radius: 10px;" />
+      <button class="cta-btn">Preview Live</button>
+    </div>
+    <div class="demo">
+      <img src="demo2.jpg" alt="Demo 2" style="width: 100%; border-radius: 10px;" />
+      <button class="cta-btn">Preview Live</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>“Loved the speed, design, and communication. Will recommend 100%.” – A Happy Client</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xldbzgyz" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="text" name="contact" placeholder="Your Contact Number">
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+    <p>Or <a href="https://calendly.com/" style="color:#00ffff; text-decoration:underline;">Book a Call on Calendly</a></p>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <div class="faq">
+      <h3>How soon will I get it?</h3>
+      <p>Depending on the package, you'll receive your website within 3–7 days.</p>
+    </div>
+    <div class="faq">
+      <h3>Do I need to provide content?</h3>
+      <p>If you have content ready, great! Otherwise, I can help create or optimize it for you.</p>
+    </div>
+    <div class="faq">
+      <h3>What if I don’t like it?</h3>
+      <p>I offer revisions and ensure we’re aligned every step of the way.</p>
+    </div>
+  </section>
+
+</body>
+</html>
